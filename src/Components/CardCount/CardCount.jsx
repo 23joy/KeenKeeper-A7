@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { use } from 'react';
 
-const CardCount = ({friends}) => {
+const CardCount = ({friendsPromise}) => {
+    const friends=use(friendsPromise)
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[80%] container mx-auto'>
             <div className='bg-[#FFFFFF] rounded-xl shadow-gray-300 p-8 text-center'>

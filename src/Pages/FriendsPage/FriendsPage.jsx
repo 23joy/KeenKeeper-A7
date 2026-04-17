@@ -25,13 +25,16 @@ const [timeline,setTimeline]=useState("");
         <div className='container mx-auto m-10'>
             <h2 className='font-bold'>TimeLine</h2>
             <div className="dropdown dropdown-bottom dropdown-end">
-        <div tabIndex={0} role="button" className="btn m-1">Filter timeline <RiArrowDropDownLine /></div>
-        <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-            <li onClick={()=>setTimeline('hello')} className='hover:bg-emerald-100'><a>Call</a></li>
-            <li onClick={()=>setTimeline()} className='hover:bg-emerald-100'><a>Text</a></li>
-            <li onClick={()=>setTimeline()} className='hover:bg-emerald-100'><a>Video</a></li>
-        </ul>
+            <div tabIndex={0} role="button" className="btn m-1">Filter timeline <RiArrowDropDownLine /></div>
+            <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                <li onClick={()=>setTimeline(call)} className='hover:bg-emerald-100'><a>Call</a></li>
+                <li onClick={()=>setTimeline(Text)} className='hover:bg-emerald-100'><a>Text</a></li>
+                <li onClick={()=>setTimeline(video)} className='hover:bg-emerald-100'><a>Video</a></li>
+            </ul>
         </div>
+        {
+            all.length===0 && <h2 className='flex justify-center p-6'>No data available</h2>
+        }
             <div className='p-3 flex flex-col gap-4 rounded-2xl mt-5'>
                 {
                     

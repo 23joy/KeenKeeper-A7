@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Link } from 'react-router';
 
 
 
-const AllFriends = ({friends}) => {
-    console.log(friends)
+const AllFriends = ({friendsPromise}) => {
+    console.log(friendsPromise)
+    const friends=use(friendsPromise)
     
     return (
         <div className='my-12 max-w-[80%] container mx-auto'>
             <h2 className='font-bold text-3xl '>Your Friends</h2>
-            <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+            <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
                 {
                 friends.map((friend)=>
                     <Link to={`/friendsDetails/${friend.id}`}  >
-                        <div className="card bg-base-100 w-60 shadow-sm flex justify-center items-center mt-10">
+                        <div className="card bg-base-100 w-60 shadow-sm flex justify-center items-center mt-10 p-3">
                             <img className='rounded-full w-20 h-20' src={friend.picture}
                             />
                             <div className="card-body ">

@@ -13,42 +13,42 @@ const FriendProvider = ({children}) => {
     const handleAudio=(currenFriend)=>{
         // console.log (currenFriend);
 
-        const isExistBook=callFriend.find(friend=>friend.id===currenFriend.id)
+        const isExistCall=callFriend.find(friend=>friend.id===currenFriend.id)
 
-        if(isExistBook){
+        if(isExistCall){
             toast.error("The friends is already exist");
         }
         else{
             setCallFriend([...callFriend,currenFriend])
-            toast.success("The friends added time line") 
+            toast.success(`${currenFriend.name} added timeline`) 
         }
         
     }
     const handleText=(currenFriend)=>{
         // console.log (currenFriend);
 
-        const isExistBook=textFriend.find(friend=>friend.id===currenFriend.id)
+        const isExistText=textFriend.find(friend=>friend.id===currenFriend.id)
 
-        if(isExistBook){
+        if(isExistText){
             toast.error("The friends is already exist");
         }
         else{
             setTextFriend([...textFriend,currenFriend])
-            toast.success("The friends added time line") 
+            toast.success(`${currenFriend.name}added timeline`) 
         }
         
     }
     const handleVideo=(currenFriend)=>{
         // console.log (currenFriend);
 
-        const isExistBook=videoFriend.find(friend=>friend.id===currenFriend.id)
+        const isExistVideo=videoFriend.find(friend=>friend.id===currenFriend.id)
 
-        if(isExistBook){
+        if(isExistVideo){
             toast.error("The friends is already exist");
         }
         else{
             setVideoFriend([...videoFriend,currenFriend])
-            toast.success("The friends added time line") 
+            toast.success(`${currenFriend.name} added timeline`) 
         }
         
     }

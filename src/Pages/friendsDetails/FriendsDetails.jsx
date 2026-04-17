@@ -22,7 +22,8 @@ const FriendsDetails = () => {
     return (
         <div className='flex m-10 container mx-auto '>
             <div className='left w-90 mr-10 '>
-                <div className='bg-[#FFFFFF] rounded-2xl p-2 p-5 mb-5 space-y-5'>
+                <div className='bg-[#FFFFFF] rounded-2xl p-2 p-5 mb-5 space-y-5
+                flex flex-col justify-center items-center'>
                     <img className=' w-30 h-30 rounded-full' src={friend.picture} alt="" />
                     <div className={`badge text-white p-3 ${friend.status==='overdue' && 'bg-red-500'}
                     ${friend.status==='almost due' && 'bg-amber-600'}
@@ -67,7 +68,7 @@ const FriendsDetails = () => {
                 </div>
                 <div className='bg-[#FFFFFF] rounded-2xl mt-10 p-5'>
                     <div className='flex justify-between items-center'>
-                        <h2>Relationship Goal</h2>
+                        <h2 className='text-green-900'>Relationship Goal</h2>
                         <button className='btn'>Edit</button>
                     </div>
                     <p>Connect every <span className='font-bold'>{friend.goal} Days</span></p>
