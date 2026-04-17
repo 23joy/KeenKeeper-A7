@@ -4,6 +4,7 @@ import HomePage from "../Pages/HomePage/HomePage";
 import FriendsPage from "../Pages/FriendsPage/FriendsPage";
 import ErrorPage from "../Pages/HomePage/ErrorPage";
 import FriendsDetails from "../Pages/friendsDetails/FriendsDetails";
+import Deshboard from "../Pages/deshboard/Deshboard";
 
 
 export const router=createBrowserRouter([
@@ -23,7 +24,11 @@ export const router=createBrowserRouter([
         path:'/friendsDetails/:id',
         Component:FriendsDetails,
         loader:()=>fetch('/AllFriends.json')
-      }
+      },
+      {
+       path:'/deshboard',
+       Component:Deshboard
+      },
     ],
     errorElement:<ErrorPage></ErrorPage>
   },

@@ -14,7 +14,7 @@ const Navbar = () => {
                 <ul className="flex gap-5">
                     <li ><NavLink to='/' className={({isActive})=>`flex gap-1 items-center p-1 ${isActive && 'text-white bg-green-900'}`}><GoHome></GoHome> Home</NavLink></li>
                     <li><NavLink  to='/Friends' className={({isActive})=>`flex gap-1 items-center p-1 ${isActive && 'text-white bg-green-900'}`}><IoTimeOutline/>Timeline</NavLink></li>
-                    <li><NavLink to='/error' className={({isActive})=>`flex gap-1 items-center p-1 ${isActive && 'text-white bg-green-900'}`}><TfiStatsUp />Stats</NavLink> </li>
+                    <li><NavLink to='/deshboard' className={({isActive})=>`flex gap-1 items-center p-1 ${isActive && 'text-white bg-green-900'}`}><TfiStatsUp />Stats</NavLink> </li>
                 </ul>
             </div>
         </div>

@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import call from "../../assets/call.png"
 import Text from "../../assets/text.png"
 import video from "../../assets/video.png"
 import { MdDeleteOutline } from 'react-icons/md';
 import { IoArchiveOutline } from 'react-icons/io5';
+import { FriendContext } from '../../TimeLine/FriendContext';
 
 
 const FriendsDetails = () => {
     const {id}=useParams();
-    console.log(id,'id')
+
     const friends=useLoaderData()
-    // console.log(friends)
     const friend=friends.find(friend=>friend.id==id)
-    console.log(friend)
+    
+        
+    const {handleAudio,handleText,handleVideo}=useContext(FriendContext)
+    console.log(handleAudio,handleText,handleVideo);
+    
+
+    // const handleText=(id)=>{
+    //     console.log (id);
+
+    // }
+    // const handleVideo=(id)=>{
+    //     console.log (id);
+
+    // }
+    
     return (
         <div className='flex m-10 container mx-auto '>
             <div className='left w-90 mr-10 '>
@@ -67,15 +81,15 @@ const FriendsDetails = () => {
                 <div className='bg-gray-50 mt-5  p-5'>
                     <h2>Quick Check-In</h2>
                     <div className='flex gap-4'>
-                        <div className='w-20 bg-mauve-100 p-3 font-bold'>
+                        <div className='w-20 bg-mauve-100 p-3 font-bold' onClick={()=>handleAudio(friend)}>
                             <img src={call} alt="" />
                             <p>Call</p>
                         </div>
-                        <div className='w-20 bg-mauve-100 p-3 font-bold'>
+                        <div className='w-20 bg-mauve-100 p-3 font-bold'onClick={()=>handleText(friend)}>
                             <img src={Text} alt="" />
                             <p>Text</p>
                         </div>
-                        <div className='w-20 bg-mauve-100 p-3 font-bold '>
+                        <div className='w-20 bg-mauve-100 p-3 font-bold'onClick={()=>handleVideo(friend)}>
                             <img src={video} alt="" />
                             <p>Video</p>
                         </div>
