@@ -1,4 +1,4 @@
-import React, { Suspense, use } from 'react';
+import React, { use } from 'react';
 import Banner from '../../Components/Banner/Banner';
 import CardCount from '../../Components/CardCount/CardCount';
 import AllFriends from './AllFriends';
@@ -12,9 +12,8 @@ const HomePage = () => {
         <div>
             <Banner></Banner>
             <CardCount friends={friends}></CardCount>
-            <Suspense fallback={<span>loading............</span>}>
-                <AllFriends friends={friends}></AllFriends>
-            </Suspense>
+            <AllFriends friends={friends}></AllFriends>
+            
         </div>
     );
 };

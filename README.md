@@ -1,16 +1,16 @@
-# React + Vite
+# KeenKeeper-A7
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I create a project, name KeenKeeper.in this project there are includes 12 friend.when we click any friend then we see this friends details and we can audiocall, text, video call.i create a deshboard where we see how many time have we given audiocall, text, videocall.
 
-Currently, two official plugins are available:
+# Technologies i used
+1.vite & react
+2.tailwind and daisy Ui
+3.react icon ,router etc
+4.netlify,
+5.github
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 3 key features of my project
+1.i am using API in my friends file ,every details added dynamically
+2.i am using react toastify when we clicked Call ,text ,video then we see a toatlify.
+3.desboard features i added pi-chart here we see how many time we call text and video have you given .when i click call text video everytime this length added this pi-chart
