@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Legend, Pie, PieChart, Tooltip } from 'recharts';
+import { FriendContext } from '../../TimeLine/FriendContext';
 
 const Deshboard = () => {
+    const {callFriend,textFriend,videoFriend}=useContext(FriendContext)
+    
 
     const data = [
-        { name: 'Group A', value: 400, fill: '#0088FE' },
-        { name: 'Group B', value: 300, fill: '#00C49F' },
-        { name: 'Group C', value: 300, fill: '#FFBB28' },
+        { name: 'Audio', value:90, fill: '#0088FE' },
+        { name: 'Text', value: 300, fill: '#00C49F' },
+        { name: 'Video', value: 300, fill: '#FFBB28' },
         ];
 
     return (

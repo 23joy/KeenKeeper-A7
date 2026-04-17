@@ -10,8 +10,8 @@ const AllFriends = ({Friends}) => {
             <h2 className='font-bold text-3xl '>Your Friends</h2>
             <div className='grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5'>
                 {
-                Friends.map((friend)=>
-                    <div className="card bg-base-100 w-60 shadow-sm flex justify-center items-center mt-10">
+                Friends.map((friend,ind)=>
+                    <div key={ind} className="card bg-base-100 w-60 shadow-sm flex justify-center items-center mt-10">
                         <img className='rounded-full w-20 h-20' src={friend.picture}
                         />
                         <div className="card-body">

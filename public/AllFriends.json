@@ -7,6 +7,8 @@
     "days_since_contact": 18,
     "status": "overdue",
     "tags": ["Work"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "We studied Computer Science together at Dhaka University. We used to prepare for exams and share notes late into the night.",
     "goal": 14,
     "next_due_date": "2025-07-10"
@@ -19,6 +21,8 @@
     "days_since_contact": 10,
     "status": "almost due",
     "tags": ["FAMILY"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "Colleague from my first job. We still go to the gym together when our schedules match.",
     "goal": 12,
     "next_due_date": "2025-07-16"
@@ -31,6 +35,8 @@
     "days_since_contact": 4,
     "status": "on-track",
     "tags": ["WORK"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "My childhood best friend. We grew up in the same neighborhood and still share everything.",
     "goal": 14,
     "next_due_date": "2025-07-24"
@@ -43,6 +49,8 @@
     "days_since_contact": 21,
     "status": "overdue",
     "tags": ["HOBBY", "TRAVEL"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "My cousin who moved abroad for studies. We used to play cricket together every evening.",
     "goal": 15,
     "next_due_date": "2025-07-08"
@@ -55,6 +63,8 @@
     "days_since_contact": 7,
     "status": "on-track",
     "tags": ["wORK"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "Lives next door. We’ve gone on several trips across Bangladesh together, especially to Cox’s Bazar.",
     "goal": 14,
     "next_due_date": "2025-07-21"
@@ -67,6 +77,8 @@
     "days_since_contact": 13,
     "status": "almost due",
     "tags": ["FAMILY"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "Met through a freelance project. We often discuss web development trends and share project ideas.",
     "goal": 14,
     "next_due_date": "2025-07-15"
@@ -79,6 +91,8 @@
     "days_since_contact": 2,
     "status": "on-track",
     "tags": ["WORK"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "We’re part of the same book club. Recently finished reading a novel together and had a long discussion about it.",
     "goal": 10,
     "next_due_date": "2025-07-26"
@@ -91,6 +105,8 @@
     "days_since_contact": 16,
     "status": "overdue",
     "tags": ["HOBBY", "TRAVEL"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "School friend and football teammate. We used to play in local tournaments every weekend.",
     "goal": 14,
     "next_due_date": "2025-07-11"
@@ -103,6 +119,8 @@
     "days_since_contact": 5,
     "status": "on-track",
     "tags": ["WORK"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "Met during a startup workshop. He often guides me on business ideas and entrepreneurship.",
     "goal": 10,
     "next_due_date": "2025-07-22"
@@ -115,6 +133,8 @@
     "days_since_contact": 12,
     "status": "almost due",
     "tags": ["FAMILY","FRIEND"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "We studied in the same college and used to participate in cultural programs together.",
     "goal": 14,
     "next_due_date": "2025-07-14"
@@ -127,6 +147,8 @@
     "days_since_contact": 20,
     "status": "overdue",
     "tags": ["TRAVEL", "WORK"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "Met through online gaming. We used to play PUBG and chat late at night.",
     "goal": 14,
     "next_due_date": "2025-07-09"
@@ -139,6 +161,8 @@
     "days_since_contact": 6,
     "status": "on-track",
     "tags": ["HOBBY", "TRAVEL"],
+    "type":["call","text","video"],
+    "types":["Call","Text","Video"],
     "bio": "Works in HR at my current company. Always supportive and helpful with career advice.",
     "goal": 10,
     "next_due_date": "2025-07-23"
