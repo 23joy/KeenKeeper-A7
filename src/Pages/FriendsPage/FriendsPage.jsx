@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { FriendContext } from '../../TimeLine/FriendContext';
 import { FaHandshakeSimple, FaVideo } from 'react-icons/fa6';
 import { IoCall } from 'react-icons/io5';
@@ -19,8 +19,17 @@ const all=[
      ...(textFriend).map(f => ({ ...f, type: 'text',types:'Text' })),
      ...(videoFriend).map(f => ({ ...f, type: 'video', types:'Video' })),
     ]
-const [timeline,setTimeline]=useState("");
 
+
+const [date,setdate]=useState(new Date());
+useEffect(()=>{
+    const interval=setInterval(()=>{
+        setdate(new Date());
+    },1000)
+    return()=>clearInterval(interval)
+},[])
+//const filterData=timeline?all.filter(item=>item.type===timeline):all;
+//console.log(filterData);
     return (
         <div className='container mx-auto m-10'>
             <h2 className='font-bold'>TimeLine</h2>
@@ -58,7 +67,7 @@ const [timeline,setTimeline]=useState("");
                                     with{item.name}</h2>
                                 </div>
                             </div>
-                            <p className=''>{item.next_due_date}</p>
+                            <p className=''>{date.toLocaleDateString()}</p>
                         </div>
                         
                     )
