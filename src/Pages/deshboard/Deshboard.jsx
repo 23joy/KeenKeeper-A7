@@ -7,15 +7,15 @@ const Deshboard = () => {
     
 
     const data = [
-        { name: 'Audio', value:90, fill: '#0088FE' },
-        { name: 'Text', value: 300, fill: '#00C49F' },
-        { name: 'Video', value: 300, fill: '#FFBB28' },
+        { name: 'Audio', value:callFriend.length, fill: '#0088FE' },
+        { name: 'Text', value: textFriend.length, fill: '#00C49F' },
+        { name: 'Video', value: videoFriend.length, fill: '#FFBB28' },
         ];
 
     return (
         <div className='container mx-auto m-10'>
             <h2 className='font-bold text-2xl'>Friendship Analytics</h2>
-            <div className='bg-amber-50 p-4'>
+            <div className='bg-[#FFFFFF] rounded-2xl mt-5 p-4'>
                 <h2 className=''>By Interaction Type</h2>
                 <div className='flex  justify-center'>
                     <PieChart className='w-80 h-60' style={{ width: '100%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>

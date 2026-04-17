@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FriendContext } from '../../TimeLine/FriendContext';
 import { FaHandshakeSimple, FaVideo } from 'react-icons/fa6';
 import { IoCall } from 'react-icons/io5';
@@ -6,6 +6,7 @@ import { LuMessageCircleMore } from 'react-icons/lu';
 import call from "../../assets/call.png"
 import Text from "../../assets/text.png"
 import video from "../../assets/video.png"
+import { RiArrowDropDownLine } from 'react-icons/ri';
 
 
 
@@ -18,11 +19,19 @@ const all=[
      ...(textFriend).map(f => ({ ...f, type: 'text',types:'Text' })),
      ...(videoFriend).map(f => ({ ...f, type: 'video', types:'Video' })),
     ]
-console.log(all)
+const [timeline,setTimeline]=useState("");
 
     return (
         <div className='container mx-auto m-10'>
             <h2 className='font-bold'>TimeLine</h2>
+            <div className="dropdown dropdown-bottom dropdown-end">
+        <div tabIndex={0} role="button" className="btn m-1">Filter timeline <RiArrowDropDownLine /></div>
+        <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+            <li onClick={()=>setTimeline('hello')} className='hover:bg-emerald-100'><a>Call</a></li>
+            <li onClick={()=>setTimeline()} className='hover:bg-emerald-100'><a>Text</a></li>
+            <li onClick={()=>setTimeline()} className='hover:bg-emerald-100'><a>Video</a></li>
+        </ul>
+        </div>
             <div className='p-3 flex flex-col gap-4 rounded-2xl mt-5'>
                 {
                     
